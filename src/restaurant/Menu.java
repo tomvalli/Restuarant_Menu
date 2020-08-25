@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Menu {
-    private ArrayList<MenuItem> menu = new ArrayList<>();
-    private Date date = new Date();
+    private ArrayList<MenuItem> menu;
+    private Date date;
 
-    public Menu(ArrayList<MenuItem> menu, Date date) {
-        this.menu = menu;
-        this.date = date;
+    public Menu() {
+        this.menu = new ArrayList<MenuItem>();
+        this.date = new Date();
     }
 
     public ArrayList<MenuItem> getMenu() {

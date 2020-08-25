@@ -7,14 +7,14 @@ public class MenuItem {
     private String name;
     private String desc;
     private double price;
-    private Date date = new Date();
+    private boolean isNew;
 
-    public MenuItem(String category, String name, String desc, double price, Date date) {
+    public MenuItem(String category, String name, String desc, double price) {
         this.category = category;
         this.name = name;
         this.desc = desc;
         this.price = price;
-        this.date = date;
+        this.isNew = true;
     }
 
     public String getCategory() {
@@ -49,11 +49,11 @@ public class MenuItem {
         this.price = price;
     }
 
-    public Date getDate() {
-        return date;
+    public boolean isNew() {
+        return isNew;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setNew(boolean aNew) {
+        isNew = aNew;
     }
 }
